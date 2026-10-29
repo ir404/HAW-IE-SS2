@@ -9,7 +9,7 @@ x   = 4*sin(2*pi*t)+cos(pi/4+16*pi*t);  % signal vector
 % plot(t,x,'b','Linewidth',2);
 % title('signal'); xlabel('time t'); ylabel('signal x(t)');
 
-m = 24;                                 % every m-th value will be sampled (max allowed is 24)
+m = 30;                                 % every m-th value will be sampled (max allowed is 24)
 T_s = m*dT;                             % sampling period 
 t_n = downsample(t,m);                  % time vector for the samples
 x_n = downsample(x,m);                  % downsampled signal
